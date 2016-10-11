@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- COMMON -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- /COMMON -->
+
+    <!-- PAGE -->
+    {% block meta %}
+    <title>Aleksandr Kriuchkov (aka alvik48) personal page</title>
+    <meta name="description" content="Personal page of Aleksandr Kriuchkov &mdash; frontend & node.js developer">
+    {% endblock %}
+    <!-- /PAGE -->
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="favicon-62.png" sizes="62x62" type="image/png">
+    <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+    <!-- /FAVICON -->
+
+    <!-- APPLE -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="alvik48">
+    <link rel="apple-touch-icon" href="favicon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
+    <!-- /APPLE -->
+
+    <!-- ANDROID -->
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- /ANDROID -->
+
+    <!-- MS -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="application-name" content="alvik48">
+    <meta name="msapplication-tooltip" content="Aleksandr Kriuchkov (aka alvik48) personal page">
+    <meta name="msapplication-starturl" content="/">
+    <!-- /MS -->
+
+    <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Gudea:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css"/>
+    <!-- /STYLES -->
+</head>
+<body>
+
+<!-- MAIN SECTION -->
+<main class="l-app-main">
+    {% block content %}
+    {% endblock %}
+</main>
+<!-- /MAIN SECTION -->
+
+<!-- SCRIPT BUNDLE -->
+<script src="js/app.js"></script>
+<!-- /SCRIPT BUNDLE -->
+
+</body>
+</html>

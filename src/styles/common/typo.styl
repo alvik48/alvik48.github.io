@@ -1,0 +1,92 @@
+/* =============================================================================
+    Main styles
+============================================================================= */
+
+html
+    font-size $font-size-text
+
+body
+    font $font-primary
+    color $color-text
+
+pre, code, kbd, samp
+    font-family $font-mono
+
+ol
+    list-style-type decimal
+
+small
+    font-size 85%
+
+strong, b
+    font-weight bold
+
+sub
+    vertical-align sub
+    font-size smaller
+
+sup
+    vertical-align super
+    font-size smaller
+
+pre
+    padding 15px
+    white-space pre
+    white-space pre-wrap
+    white-space pre-line
+    word-wrap break-word
+
+::selection
+    background $color-selection-bg
+    color $color-selection-text
+    text-shadow none
+
+/* =============================================================================
+    Links
+============================================================================= */
+
+a
+    color $color-link
+    cursor pointer
+    text-decoration none
+
+    &:active, &:visited
+        color $color-link
+
+    &:hover
+        color $color-link-hover
+
+    &:link
+        -webkit-tap-highlight-color $color-link
+        
+p
+    margin 12px 0
+    
+ul
+    margin 12px 0
+    
+li
+    position relative
+    margin-left 12px
+    
+    &:before
+        display block
+        content '-'
+        position absolute
+        margin-left -12px
+        
+/* =============================================================================
+    Tables
+============================================================================= */        
+
+table
+    width 100%
+    
+    th
+        text-align left
+        vertical-align middle
+                
+    td
+        padding 5px 10px
+        vertical-align middle
+        text-align left

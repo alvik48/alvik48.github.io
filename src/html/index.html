@@ -1,0 +1,77 @@
+{% extends "layout/layout.html" %}
+
+{% block meta %}
+<title>Aleksandr Kriuchkov (aka alvik48) personal page</title>
+<meta name="description" content="Personal page of Aleksandr Kriuchkov &mdash; frontend & node.js developer">
+{% endblock %}
+
+{% block content %}
+<canvas id="app-canvas"></canvas>
+
+<nav class="app-nav">
+    <a class="app-nav__item active" onclick="setPage(this, 'hi')">Hi!</a>
+    <a class="app-nav__item" onclick="setPage(this, 'who-am-i')">Who am I</a>
+    <a class="app-nav__item" onclick="setPage(this, 'what-i-do')">What I do</a>
+    <a class="app-nav__item" onclick="setPage(this, 'what-i-like')">What I like</a>
+    <a class="app-nav__item" onclick="setPage(this, 'contact-me')">Contact me</a>
+</nav>
+
+<section id="hi" class="page-hi page-content active">
+    <h1 class="page-hi__main">Aleksandr Kriuchkov</h1>
+    <div class="page-hi__sub">aka <strong class="app-title__nickname">alvik48</strong></div>
+    <div class="page-hi__description">Frontend &amp; node.js developer</div>
+</section>
+
+<section id="who-am-i" class="page-content">
+    <div class="container article">
+        <h2 class="article__title">Who am I</h2>
+        <div class="article__content">
+            <p>My name is <strong>Aleksandr Kriuchkov</strong> a.k.a. <strong>alvik48</strong>. I am frontend and Node.js developer.</p>
+            <p>I was born in Russia in 1987 and live in Slovenia from 2016.</p>
+            <p>Currently I work on project <a href="https://toto15.com" target="_blank">toto15.com</a> as CTO. I develop frontend and some parts of backend scripts like calculation of live outcomes probabilities in different sport matches, bots and utilities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="what-i-do" class="page-content">
+    <div class="container article">
+        <h2 class="article__title">What I do</h2>
+        <div class="article__content">
+            <p>I develop fast and efficient web applications using modern technologies on frontend and backend.</p>
+            <p>On the frontend I use my own build system based on <strong>Gulp</strong> task manager, <strong>Nunjucks</strong> as HTML extension, <strong>Stylus</strong> as css preprocessor and some JS frameworks that I choose before starting development. I use <strong>Angular.js</strong> for prototyping and extra-fast development; <strong>React.js</strong> for complex dynamic SPA where bundle size and final application speed is not extremely important; <strong>Vanilla JS</strong> for building big, complex and fast applications.</p>
+            <p>Also I develop backend applications on <strong>Node.js</strong> like bots, parsers, command line utilities and others.</p>
+        </div>
+    </div>
+</section>
+
+<section id="what-i-like" class="page-content">
+    <div class="container article">
+        <h2 class="article__title">What I like</h2>
+        <div class="article__content">
+            <p>I love my work. But also, of course, I like many other things in my life:</p>
+            <ul>
+                <li>first of all, I love my family &mdash; my wife <strong>Oksana</strong> and son <strong>Ilya</strong>;</li>
+                <li>I like to <strong>sing</strong> and play on <strong>guitar</strong>;</li>
+                <li>I like to play <strong>chess</strong> (my FIDE rating is <strong>2153</strong> for classic chess and <strong>2228</strong> for blits);</li>
+                <li>I like to play <strong>soccer</strong>.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact-me" class="page-content">
+    <div class="container article">
+        <h2 class="article__title">Contact me</h2>
+        <div class="article__content">
+            <ul>
+                <p>Want contact me? No problem, you can:</p>
+                <li>write me an email to mailbox: <a href="mailto:alvik48@gmail.com">alvik48@gmail.com</a></li>
+                <li>call me on phone (in Russia): <a href="skype:+79132400162?call">+7 (913) 240-0162</a></li>
+                <li>call or write me to skype: <a href="skype:alvik48?chat">alvik48</a></li>
+                <li>find me in vk.com: <a href="https://vk.com/a_kryuchkov" target="_blank">vk.com/a_kryuchkov</a></li>
+                <li>find me in facebook: <a href="https://www.facebook.com/kryuchkov87" target="_blank">facebook.com/kryuchkov87</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

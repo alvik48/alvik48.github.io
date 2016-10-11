@@ -1,0 +1,19 @@
+# Edirors files
+.idea
+*.sublime*
+
+# Libraries
+node_modules
+
+# Release files
+/docs
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp
+
+# Private configs
+
