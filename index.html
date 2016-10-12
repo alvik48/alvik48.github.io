@@ -4,7 +4,7 @@
     <!-- COMMON -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=320">
     <!-- /COMMON -->
 
     <!-- PAGE -->
@@ -58,11 +58,13 @@
 <canvas id="app-canvas"></canvas>
 
 <nav class="app-nav">
-    <a class="app-nav__item active" onclick="setPage(this, 'hi')">Hi!</a>
-    <a class="app-nav__item" onclick="setPage(this, 'who-am-i')">Who am I</a>
-    <a class="app-nav__item" onclick="setPage(this, 'what-i-do')">What I do</a>
-    <a class="app-nav__item" onclick="setPage(this, 'what-i-like')">What I like</a>
-    <a class="app-nav__item" onclick="setPage(this, 'contact-me')">Contact me</a>
+    <div class="container">
+        <a class="app-nav__item active" onclick="setPage(this, 'hi')">Hi!</a>
+        <a class="app-nav__item" onclick="setPage(this, 'who-am-i')">Who am I</a>
+        <a class="app-nav__item" onclick="setPage(this, 'what-i-do')">What I do</a>
+        <a class="app-nav__item" onclick="setPage(this, 'what-i-like')">What I like</a>
+        <a class="app-nav__item" onclick="setPage(this, 'contact-me')">Contact me</a>
+    </div>
 </nav>
 
 <section id="hi" class="page-hi page-content active">
